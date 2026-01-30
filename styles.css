@@ -1,0 +1,168 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #1d1f27;
+  --muted: #5a6072;
+  --accent: #3f6cff;
+  --accent-soft: #e8edff;
+  --border: #dfe3f0;
+  --shadow: 0 10px 30px rgba(32, 46, 79, 0.08);
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #3f6cff, #7a5cff);
+  color: #fff;
+  padding: 4rem 0 3rem;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  max-width: 640px;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.toc {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.toc a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.code-block {
+  background: #101726;
+  color: #f3f6ff;
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+.code-block code {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+.callout {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  padding: 1rem;
+  border-radius: 12px;
+  color: #2c3c78;
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.highlight {
+  background: #f0f3ff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  color: #2c3c78;
+}
+
+.steps {
+  padding-left: 1.3rem;
+  color: var(--muted);
+}
+
+.footer {
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
