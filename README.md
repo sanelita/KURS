@@ -23,6 +23,28 @@ Ovaj kurs je strukturisan kao kompletan vodič kroz tarot – od osnova i pripre
 - Zadrži dnevnik učenja.
 - Vežbaj s realnim primerima.
 
+### 0.4 Interaktivni sadržaj (slike + video)
+Ovaj kurs je proširen tako da može da bude **interaktivan**: uz tekst možeš da dodaš slike karata, kratke video lekcije i audio objašnjenja.  
+U repozitorijumu već postoje primeri slika karata koje možeš zameniti sopstvenim vizualima:
+- `assets/cards/major-00-luda.svg`
+- `assets/cards/back.svg`
+
+**Kako da ubaciš slike:**
+- Dodaj svoje slike u `assets/cards/` (PNG, JPG ili SVG).
+- U README-u referenciraj fajl npr. `![Naziv karte](assets/cards/tvoja-karta.png)`.
+
+**Kako da ubaciš video:**
+- Ako je video na YouTube/Vimeo, ubaci link ili `iframe`.
+- Ako je lokalni MP4, možeš ga dodati u `assets/video/` i linkovati.
+
+Primer (zameniti linkove svojim):
+```html
+<video controls width="640">
+  <source src="assets/video/uvod.mp4" type="video/mp4">
+  Tvoj pregledač ne podržava video tag.
+</video>
+```
+
 ---
 
 ## 1. Osnove tarota
@@ -85,6 +107,14 @@ Svaka karta predstavlja fazu “Putovanja Lude” (The Fool’s Journey).
 ### 2.4 Kratke beleške uz svaku Veliku Arkanu
 Koristi format: **tema + dar + izazov**.  
 Primer: **Kula** = nagla promena + oslobađanje + gubitak kontrole.
+
+### 2.5 Interaktivni prikaz karata (primer)
+Ispod je primer kako karta može izgledati u kursu. Zamenite placeholder slike sopstvenim vizualima.
+
+| Karta | Vizual | Brzi opis |
+| --- | --- | --- |
+| Luda (0) | ![Luda](assets/cards/major-00-luda.svg) | Novi početak, hrabrost, spontanost |
+| Pozadina | ![Pozadina](assets/cards/back.svg) | Primer dizajna poleđine karte |
 
 ---
 
@@ -160,6 +190,19 @@ Klasika za dublje analize (10 karata).
 1. **Opis:** šta karta pokazuje na slici?
 2. **Simboli:** koji simbol “iskače” i zašto?
 3. **Poruka:** kako se ovo uklapa u pitanje?
+
+### 5.2.1 Video lekcija (primer)
+U ovaj deo možeš ubaciti kratku video lekciju o tumačenju.
+
+```html
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/VIDEO_ID"
+  title="Tarot lekcija"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+```
 
 ### 5.2 Pitanja i formulacija
 Umesto: “Hoće li X?”  
