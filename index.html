@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Kurs — Brzi vodič</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <span class="badge">Besplatan mini kurs</span>
+        <h1>HTML kurs</h1>
+        <p class="lead">
+          Nauči osnove HTML-a kroz kratke lekcije, primere koda i mini projekat.
+        </p>
+        <div class="hero-meta">
+          <div>
+            <strong>Nivo:</strong> početni
+          </div>
+          <div>
+            <strong>Trajanje:</strong> 2-3 sata
+          </div>
+          <div>
+            <strong>Preporuka:</strong> otvoren editor i browser
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="sadrzaj" class="card">
+        <h2>Sadržaj kursa</h2>
+        <ol class="toc">
+          <li><a href="#osnove">Osnove HTML-a</a></li>
+          <li><a href="#struktura">Struktura dokumenta</a></li>
+          <li><a href="#tekst">Tekst i semantika</a></li>
+          <li><a href="#liste">Liste i linkovi</a></li>
+          <li><a href="#mediji">Slike i multimedija</a></li>
+          <li><a href="#tabele">Tabele</a></li>
+          <li><a href="#forme">Forme</a></li>
+          <li><a href="#layout">Semantičke sekcije i layout</a></li>
+          <li><a href="#projekat">Mini projekat</a></li>
+          <li><a href="#resursi">Resursi i sledeći koraci</a></li>
+        </ol>
+      </section>
+
+      <section id="osnove" class="card">
+        <h2>1. Osnove HTML-a</h2>
+        <p>
+          HTML (HyperText Markup Language) je standardni jezik za strukturisanje
+          sadržaja na webu. HTML koristi <em>tagove</em> da opiše naslov, pasus,
+          listu, sliku i druge elemente.
+        </p>
+        <div class="code-block">
+          <pre><code>&lt;h1&gt;Naslov stranice&lt;/h1&gt;
+&lt;p&gt;Ovo je pasus teksta.&lt;/p&gt;</code></pre>
+        </div>
+        <p>
+          Tagovi se obično sastoje od otvarajućeg i zatvarajućeg taga, npr.
+          <code>&lt;p&gt;...&lt;/p&gt;</code>. Neki tagovi su samostalni (npr.
+          <code>&lt;img /&gt;</code>).
+        </p>
+      </section>
+
+      <section id="struktura" class="card">
+        <h2>2. Struktura dokumenta</h2>
+        <p>
+          Svaki HTML dokument ima osnovnu strukturu sa <code>&lt;head&gt;</code>
+          i <code>&lt;body&gt;</code>.
+        </p>
+        <div class="code-block">
+          <pre><code>&lt;!doctype html&gt;
+&lt;html lang="sr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;Moj sajt&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Zdravo&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        <p>
+          U <code>&lt;head&gt;</code> sekciji držimo meta informacije, naslov
+          stranice, povezane stilove i skripte.
+        </p>
+      </section>
+
+      <section id="tekst" class="card">
+        <h2>3. Tekst i semantika</h2>
+        <p>Za sadržaj koristimo semantičke tagove koji opisuju značenje teksta.</p>
+        <ul>
+          <li><code>&lt;h1&gt;...&lt;h6&gt;</code> — naslovi po hijerarhiji</li>
+          <li><code>&lt;p&gt;</code> — pasus</li>
+          <li><code>&lt;strong&gt;</code> — bitan tekst</li>
+          <li><code>&lt;em&gt;</code> — naglašeni tekst</li>
+          <li><code>&lt;blockquote&gt;</code> — citat</li>
+        </ul>
+        <div class="callout">
+          <strong>Savet:</strong> koristi semantiku da bi sadržaj bio pristupačan i
+          bolje razumljiv pretraživačima.
+        </div>
+      </section>
+
+      <section id="liste" class="card">
+        <h2>4. Liste i linkovi</h2>
+        <div class="grid">
+          <div>
+            <h3>Liste</h3>
+            <p>Najčešće koristimo neuređene i uređene liste.</p>
+            <div class="code-block">
+              <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+          </div>
+          <div>
+            <h3>Linkovi</h3>
+            <p>Linkovi vode ka drugim stranicama, sekcijama ili fajlovima.</p>
+            <div class="code-block">
+              <pre><code>&lt;a href="https://developer.mozilla.org"&gt;
+  MDN dokumentacija
+&lt;/a&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mediji" class="card">
+        <h2>5. Slike i multimedija</h2>
+        <p>
+          Slike dodajemo pomoću <code>&lt;img /&gt;</code> taga. Obavezno dodaj
+          <code>alt</code> tekst radi pristupačnosti.
+        </p>
+        <div class="code-block">
+          <pre><code>&lt;img src="hero.jpg" alt="Opis slike" /&gt;</code></pre>
+        </div>
+        <p>
+          Za video i audio koristimo <code>&lt;video&gt;</code> i <code>&lt;audio&gt;</code>
+          tagove, uz <code>&lt;source&gt;</code> za format fajlova.
+        </p>
+      </section>
+
+      <section id="tabele" class="card">
+        <h2>6. Tabele</h2>
+        <p>Tabele su korisne za tabelarne podatke.</p>
+        <div class="code-block">
+          <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Lekcija&lt;/th&gt;
+      &lt;th&gt;Trajanje&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Osnove&lt;/td&gt;
+      &lt;td&gt;30 min&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+      </section>
+
+      <section id="forme" class="card">
+        <h2>7. Forme</h2>
+        <p>Forme omogućavaju unos podataka.</p>
+        <div class="code-block">
+          <pre><code>&lt;form&gt;
+  &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;input id="email" type="email" required /&gt;
+  &lt;button type="submit"&gt;Pošalji&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+        <p>
+          Uvek poveži <code>&lt;label&gt;</code> sa poljem (id) radi pristupačnosti.
+        </p>
+      </section>
+
+      <section id="layout" class="card">
+        <h2>8. Semantičke sekcije i layout</h2>
+        <p>
+          Semantički elementi pomažu da strana bude jasnija i lakša za održavanje.
+        </p>
+        <div class="grid">
+          <div>
+            <ul>
+              <li><code>&lt;header&gt;</code> — uvod u stranicu ili sekciju</li>
+              <li><code>&lt;main&gt;</code> — glavni sadržaj</li>
+              <li><code>&lt;section&gt;</code> — tematska celina</li>
+              <li><code>&lt;article&gt;</code> — samostalan sadržaj</li>
+              <li><code>&lt;footer&gt;</code> — završni deo</li>
+            </ul>
+          </div>
+          <div class="highlight">
+            <p>
+              Dobra praksa je da raspored definišeš u CSS-u (grid/flex), a HTML
+              koristiš za značenje.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projekat" class="card">
+        <h2>9. Mini projekat: Profil stranica</h2>
+        <p>
+          Kreiraj jednostavnu profil stranicu koristeći lekcije iz kursa.
+        </p>
+        <ol class="steps">
+          <li>Napravi osnovnu HTML strukturu.</li>
+          <li>Dodaj naslov, kratku biografiju i listu veština.</li>
+          <li>Uključi linkove ka društvenim mrežama.</li>
+          <li>Dodaj sliku profila sa alt tekstom.</li>
+          <li>Stilizuj stranicu u CSS-u (boje, razmak, tipografija).</li>
+        </ol>
+        <div class="callout">
+          <strong>Bonus:</strong> Dodaj kontakt formu i dugme za preuzimanje CV-a.
+        </div>
+      </section>
+
+      <section id="resursi" class="card">
+        <h2>10. Resursi i sledeći koraci</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML dokumentacija</a></li>
+          <li><a href="https://html.spec.whatwg.org/">WHATWG HTML standard</a></li>
+          <li><a href="https://web.dev/learn/html/">Web.dev HTML kurs</a></li>
+        </ul>
+        <p>
+          Sledeći korak: nauči osnove CSS-a da bi stilizovao HTML i JavaScript
+          za interaktivnost.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Napravio: HTML kurs generator • 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
