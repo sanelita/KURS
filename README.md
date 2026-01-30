@@ -26,8 +26,9 @@ Ovaj kurs je strukturisan kao kompletan vodič kroz tarot – od osnova i pripre
 ### 0.4 Interaktivni sadržaj (slike + video)
 Ovaj kurs je proširen tako da može da bude **interaktivan**: uz tekst možeš da dodaš slike karata, kratke video lekcije i audio objašnjenja.  
 U repozitorijumu već postoje primeri slika karata koje možeš zameniti sopstvenim vizualima:
-- `assets/cards/major-00-luda.svg`
-- `assets/cards/back.svg`
+- `assets/cards/major/` (22 Velike Arkane)
+- `assets/cards/minor/` (56 Male Arkane)
+- `assets/cards/back.svg` (poleđina)
 
 **Kako da ubaciš slike:**
 - Dodaj svoje slike u `assets/cards/` (PNG, JPG ili SVG).
@@ -113,7 +114,7 @@ Ispod je primer kako karta može izgledati u kursu. Zamenite placeholder slike s
 
 | Karta | Vizual | Brzi opis |
 | --- | --- | --- |
-| Luda (0) | ![Luda](assets/cards/major-00-luda.svg) | Novi početak, hrabrost, spontanost |
+| Luda (0) | ![Luda](assets/cards/major/major-00-luda.svg) | Novi početak, hrabrost, spontanost |
 | Pozadina | ![Pozadina](assets/cards/back.svg) | Primer dizajna poleđine karte |
 
 ---
@@ -292,6 +293,7 @@ Oprezno: tarot bolje opisuje kvalitet vremena nego precizan datum.
 - “Tarot 101” ili slične knjige kao dopuna.
 - Simbolika boja i elemenata (beleške ili kartice).
 - Vođenje evidencije čitanja (template tabela).
+- Galerija placeholder karata: `assets/cards/README.md`.
 
 ---
 

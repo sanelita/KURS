@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="600" viewBox="0 0 360 600" role="img" aria-label="Paž · Mačevi">
+  <rect x="10" y="10" width="340" height="580" rx="18" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+  <rect x="24" y="24" width="312" height="552" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="180" y="72" text-anchor="middle" font-size="18" font-family="Georgia, serif" fill="#0f172a">Paž · Mačevi</text>
+  <circle cx="180" cy="235" r="70" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+  <text x="180" y="245" text-anchor="middle" font-size="16" font-family="Arial, sans-serif" fill="#0f172a">Mala Arkana</text>
+  <text x="180" y="430" text-anchor="middle" font-size="12" font-family="Arial, sans-serif" fill="#64748b">Placeholder ilustracija</text>
+  <text x="180" y="455" text-anchor="middle" font-size="12" font-family="Arial, sans-serif" fill="#64748b">Zameni sopstvenom slikom</text>
+</svg>
